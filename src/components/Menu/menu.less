@@ -1,0 +1,17 @@
+.menu {
+  
+  &--list-item-link {
+    display: block;
+    width: 90%;
+    padding: .8rem 0;
+    text-decoration: none;
+    padding-left: 1rem;
+    #border.solid(bottom, 2px, @white);
+    #display.colors(@white, darken(@col-primary, 10%));
+
+    &:hover,
+    &---active {
+      background-color: lighten(@col-primary, 5%);
+    }
+  }
+}
