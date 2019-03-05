@@ -10,13 +10,14 @@ Ideally you will have your own color pallette with HEX or RGB color variables
 defined in variables.less which will override these color values.
 
 ## Setting your color pallette:
+
 Color pallettes can have a range of colors so I have gone with an incremental naming convention.
 You can override these and add as many as you need.
 
 ```css
 @color-01: @blue        // primary color
 @color-02: @blue-light  // secondary color
-@color-03: @gray-light  // tertiary color
+@color-03: @gray-light;
 ```
 
 Another thing to note is, for consistency, I use the same spelling for variable naming as CSS

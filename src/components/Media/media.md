@@ -5,7 +5,7 @@ Target below 320px:
 ```CSS
 @media @mobile-small-max {
   // Insert styles
-} 
+}
 ```
 
 Target above 320px:

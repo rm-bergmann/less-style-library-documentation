@@ -3,6 +3,11 @@ import React from 'react';
 const Buttons = () => (
   <div className="content content-buttons">
     <h1>Buttons</h1>
+    <p>
+      By default the background colour is set to the @color-01 variable which I
+      set to @teal in this app.
+    </p>
+    <p>By default, @color-01 is set to @blue.</p>
     <pre>
       <code>#button.flat();</code>
       <code>#button.flat(@green);</code>
@@ -42,6 +47,14 @@ const Buttons = () => (
     >
       Button 03
     </button>
+    <h2>Parameter order & default values</h2>
+    <pre>
+      <code>background-color: @color;</code>
+      <code>color: white;</code>
+      <code>font-size: 1rem;</code>
+      <code>padding: 1rem;</code>
+      <code>border-radius: 0;</code>
+    </pre>
     <pre>
       <code>#button.custom(@teal, white, .8rem, 1.1rem, .4rem);</code>
       <code>#button.custom(#c9c9c9, black, 20px, 16px, 10px);</code>
