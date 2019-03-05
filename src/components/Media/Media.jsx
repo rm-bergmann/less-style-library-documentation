@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import aboutContent from '../../../README.md';
+import mediaContent from './media.md';
 
-class About extends Component {
+class Media extends Component {
   state = {
-    markdown: aboutContent,
+    markdown: mediaContent,
   };
 
   render() {
@@ -15,4 +15,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Media;
