@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 
-const port = process.env.PORT || 2052;
+const port = process.env.PORT || 1002;
 const app = express();
 
 const React = require('react');
