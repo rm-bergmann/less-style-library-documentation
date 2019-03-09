@@ -61,6 +61,7 @@ If you want to show / hide on specific devices you can use these mixins, as they
 ```
 
 I have a mixin for a situation where Chrome doesn't render webfonts. (This may have been a bug and fixed in a later version).
+
 ```CSS
 #display.webkit-delay();
 ```
