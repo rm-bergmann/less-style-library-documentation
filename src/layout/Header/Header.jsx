@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Menu from '../Menu/Menu';
-import MenuIcon from '../MenuIcon/MenuIcon';
+import MenuIcon from '../Menu/MenuIcon';
 
 const Header = ({ appName }) => (
   <header className="header">

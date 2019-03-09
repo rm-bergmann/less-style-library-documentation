@@ -1,6 +1,7 @@
 .header {
   #display.colors(white, @color-01);
   #border.solid(bottom, 4px, lighten(@color-03, 40%));
+  #display.grid();
   padding: 20px 0;
   grid-area: header;
 
@@ -11,10 +12,10 @@
     }
 
     &-title {
-      margin: .5rem 0 0 1.2rem;
+      margin: .5rem 0 .5rem 1.2rem;
       color: white;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: bold;
       display: block;
     }

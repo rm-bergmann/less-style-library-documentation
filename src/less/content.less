@@ -1,11 +1,10 @@
 #app {
-  display: grid;
-
   grid-template-areas:
     "header header header"
-    "nav content side";
-
-  grid-template-columns: 200px 1fr 300px;
+    "nav content side"
+    "footer footer footer";
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
   grid-template-rows: auto 1fr auto;
   grid-gap: 0 10px;
   height: 100vh;
@@ -13,7 +12,7 @@
 
 .content {
   grid-area: content;
-  padding: 2rem;
+  padding: 0 2rem 3rem 2rem;
  
   ul {
     padding-left: 1rem;
@@ -24,8 +23,8 @@
   }
 }
 
-aside {
-  grid-area: side;
-  padding: 1rem;
-  #display.colors(white, @color-03);
+footer {
+  grid-area: footer;
+  background-color: darken(@color-01, 25%);
+  height: 150px;
 }

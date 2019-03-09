@@ -1,87 +1,95 @@
 import React from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import {
+  buttonExample01,
+  buttonExample02,
+  buttonExample03,
+  buttonExample04,
+  buttonExample05,
+  buttonExample06,
+} from './buttonExamples';
 
-const Buttons = () => (
-  <div className="content content-buttons">
-    <h1>Buttons</h1>
-    <p>
-      By default the background colour is set to the @color-01 variable which I
-      set to @teal in this app.
-    </p>
-    <p>By default, @color-01 is set to @blue.</p>
-    <pre>
-      <code>#button.flat();</code>
-      <code>#button.flat(@green);</code>
-    </pre>
-    <button type="button" className="content-buttons--button-01">
-      Button 01
-    </button>
-    <button
-      type="button"
-      className="content-buttons--button-01 content-buttons--button-01---green"
-    >
-      Button 01
-    </button>
-    <pre>
-      <code>#button.flat(rounded);</code>
-      <code>#button.flat(rounded, @red);</code>
-    </pre>
-    <button type="button" className="content-buttons--button-02">
-      Button 02
-    </button>
-    <button
-      type="button"
-      className="content-buttons--button-02 content-buttons--button-02---red"
-    >
-      Button 02
-    </button>
-    <pre>
-      <code>#button.flat(round);</code>
-      <code>#button.flat(round, @purple);</code>
-    </pre>
-    <button type="button" className="content-buttons--button-03">
-      Button 03
-    </button>
-    <button
-      type="button"
-      className="content-buttons--button-03 content-buttons--button-03---purple"
-    >
-      Button 03
-    </button>
-    <h2>Parameter order & default values</h2>
-    <pre>
-      <code>background-color: @color;</code>
-      <code>color: white;</code>
-      <code>font-size: 1rem;</code>
-      <code>padding: 1rem;</code>
-      <code>border-radius: 0;</code>
-    </pre>
-    <pre>
-      <code>#button.custom(@teal, white, .8rem, 1.1rem, .4rem);</code>
-      <code>#button.custom(#c9c9c9, black, 20px, 16px, 10px);</code>
-    </pre>
-    <button type="button" className="content-buttons--button-04">
-      Button 04
-    </button>
-    <button
-      type="button"
-      className="content-buttons--button-04 content-buttons--button-04---gray"
-    >
-      Button 04
-    </button>
-    <pre>
-      <code>#button.link();</code>
-      <code>#button.link(@orange, white, 10px, 14px, 4px);</code>
-    </pre>
-    <a className="content-buttons--button-link" href="/">
-      I am a link
-    </a>
-    <a
-      className="content-buttons--button-link content-buttons--button-link---orange"
-      href="/"
-    >
-      I am also a link
-    </a>
-  </div>
-);
+// Crazy code! Need to componentize or something, trying to find an automatable pattern
+// but there are some differences in the patterns
+const Buttons = () => {
+  const syntaxHighlight = atomDark;
+
+  return (
+    <div className="content content-buttons">
+      <h1>Buttons</h1>
+      <p>
+        By default the background colour is set to the @color-01 variable which
+        I set to @teal in this app. Target the element you want to style and
+        call the mixin.
+      </p>
+      <p>By default, @color-01 is set to @blue.</p>
+      <SyntaxHighlighter language="css" style={syntaxHighlight}>
+        {buttonExample01}
+      </SyntaxHighlighter>
+      <button type="button" className="content-buttons--button-01">
+        Button 01
+      </button>
+      <button
+        type="button"
+        className="content-buttons--button-01 content-buttons--button-01---green"
+      >
+        Button 01
+      </button>
+      <SyntaxHighlighter language="css" style={syntaxHighlight}>
+        {buttonExample02}
+      </SyntaxHighlighter>
+      <button type="button" className="content-buttons--button-02">
+        Button 02
+      </button>
+      <button
+        type="button"
+        className="content-buttons--button-02 content-buttons--button-02---red"
+      >
+        Button 02
+      </button>
+      <SyntaxHighlighter language="css" style={syntaxHighlight}>
+        {buttonExample03}
+      </SyntaxHighlighter>
+      <button type="button" className="content-buttons--button-03">
+        Button 03
+      </button>
+      <button
+        type="button"
+        className="content-buttons--button-03 content-buttons--button-03---purple"
+      >
+        Button 03
+      </button>
+      <h2>Parameter order & default values</h2>
+      <SyntaxHighlighter language="css" style={syntaxHighlight}>
+        {buttonExample04}
+      </SyntaxHighlighter>
+      <SyntaxHighlighter language="css" style={syntaxHighlight}>
+        {buttonExample05}
+      </SyntaxHighlighter>
+      <button type="button" className="content-buttons--button-04">
+        Button 04
+      </button>
+      <button
+        type="button"
+        className="content-buttons--button-04 content-buttons--button-04---gray"
+      >
+        Button 04
+      </button>
+      <SyntaxHighlighter language="css" style={syntaxHighlight}>
+        {buttonExample06}
+      </SyntaxHighlighter>
+      <a className="content-buttons--button-link" href="/">
+        I am a link
+      </a>
+      <a
+        className="content-buttons--button-link content-buttons--button-link---orange"
+        href="/"
+      >
+        I am also a link
+      </a>
+    </div>
+  );
+};
 
 export default Buttons;
