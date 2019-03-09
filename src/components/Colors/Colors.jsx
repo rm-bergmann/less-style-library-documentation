@@ -12,7 +12,7 @@ class Colors extends Component {
     const { markdown } = this.state;
     return (
       <Fragment>
-        <div className="content-colors--header">
+        <div className="content content-colors--header">
           {ReactHtmlParser(markdown)}
         </div>
         <div className="content content-colors">

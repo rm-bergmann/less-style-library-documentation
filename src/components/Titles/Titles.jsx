@@ -6,7 +6,6 @@ const Titles = () => (
     <h3 className="content-examples--title content-examples--title---small">
       Title Small
     </h3>
-    <input className="content-examples--input" />
   </div>
 );
 
