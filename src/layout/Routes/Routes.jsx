@@ -21,6 +21,8 @@ import Borders from 'components/Borders/Borders';
 import Display from 'components/Display/Display';
 import Hide from 'components/Hide/Hide';
 import Font from 'components/Font/Font';
+import Gradients from 'components/Gradients/Gradients';
+import Shapes from 'components/Shapes/Shapes';
 
 const Routes = () => (
   <Router history={browserHistory}>
@@ -42,6 +44,8 @@ const Routes = () => (
         <Route path="/display" component={Display} />
         <Route path="/hide" component={Hide} />
         <Route path="/font" component={Font} />
+        <Route path="/gradients" component={Gradients} />
+        <Route path="/shapes" component={Shapes} />
       </main>
       <aside className="sidebar">
         <Sidebar />
