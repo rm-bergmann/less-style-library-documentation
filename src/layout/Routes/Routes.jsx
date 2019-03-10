@@ -5,6 +5,7 @@ import {
   browserHistory,
 } from 'react-router-dom';
 import Header from 'layout/Header/Header';
+import Footer from 'layout/Footer/Footer';
 import Menu from 'layout/Menu/Menu';
 import Sidebar from 'layout/Sidebar/Sidebar';
 import Dashboard from 'components/Dashboard/Dashboard';
@@ -27,7 +28,7 @@ import Shapes from 'components/Shapes/Shapes';
 const Routes = () => (
   <Router history={browserHistory}>
     <Fragment>
-      <Header appName="{ LESS } Style Library Documentation" />
+      <Header appName="{Less} Style Library Documentation" />
       <Menu />
       <main>
         <Route exact path="/" component={Dashboard} />
@@ -50,7 +51,9 @@ const Routes = () => (
       <aside className="sidebar">
         <Sidebar />
       </aside>
-      <footer>Footer Content</footer>
+      <footer>
+        <Footer />
+      </footer>
     </Fragment>
   </Router>
 );

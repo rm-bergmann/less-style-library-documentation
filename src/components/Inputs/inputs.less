@@ -11,10 +11,18 @@
   
   &--container {
     margin: 2rem 0;
+    
+    input {
+      margin-top: .3rem;
+    }
   }
   
   &--label {
     #label.default();
+    
+    &---bold {
+      #label.default(bold, 18px);
+    }
     
     input {
       margin-top: .3rem;
@@ -28,14 +36,18 @@
     }
     
     &---02 {
-      #input.default(rounded);
+      #input.custom(black, white, 10px, @gray-dark, 90%, 40px, 18px);
     }
     
     &---03 {
-      #input.default(dark);
+      #input.default(rounded);
     }
     
     &---04 {
+      #input.default(dark);
+    }
+    
+    &---05 {
       #input.default(dark-rounded);
     }
   }

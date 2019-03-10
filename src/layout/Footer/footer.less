@@ -1,0 +1,19 @@
+.footer-content {
+  .footer-text-color();
+  width: 50%;
+  font-size: 1rem;
+  margin: 2em auto;
+  
+  a {
+    margin-left: 5px;
+    .footer-text-color();
+    
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer-text-color() {
+  color: lighten(@teal-light, 30%);
+}
