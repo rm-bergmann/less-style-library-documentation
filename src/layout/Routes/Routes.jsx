@@ -27,7 +27,7 @@ import Shapes from 'components/Shapes/Shapes';
 const Routes = () => (
   <Router history={browserHistory}>
     <Fragment>
-      <Header appName="LESS Style Library Documentation" />
+      <Header appName="{ LESS } Style Library Documentation" />
       <Menu />
       <main>
         <Route exact path="/" component={Dashboard} />

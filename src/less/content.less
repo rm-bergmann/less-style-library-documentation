@@ -1,13 +1,30 @@
 #app {
-  grid-template-areas:
-    "header header header"
-    "nav content side"
-    "footer footer footer";
   display: grid;
-  grid-template-columns: 240px 1fr 280px;
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 0 10px;
   height: 100vh;
+  
+  grid-template-areas:
+    'header'
+    'content'
+    'side'
+    'footer';
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto  // Header 
+      1fr   // Content
+      1fr   // Sidebar
+      auto; // Footer 
+  
+  @media @tablet-small-min {
+    grid-template-areas:
+      'header header header'
+      'nav content side'
+      'footer footer footer';
+    
+    grid-template-columns: 240px 1fr 280px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 0 10px;
+  }
 }
 
 .content {

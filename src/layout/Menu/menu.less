@@ -1,6 +1,11 @@
 .menu {
+  display: none;
   grid-area: nav;
   background: lighten(@color-03, 35%);
+  
+  @media @tablet-small-min {
+    display: block;
+  }
   
   &--list-item-link {
     display: block;
