@@ -26,13 +26,13 @@ const Inputs = () => {
   `;
 
   const codeExampleOutput = `
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-color: @gray-dark;
-  width: 90%;
-  height: 40px;
-  font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-color: @gray-dark;
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
   `;
 
   const codeExampleRound = `

@@ -13,6 +13,12 @@ To align children to left (start) or right (end) of a container apply the follow
 #display.flex(end);
 ```
 
+For a Grid like flexbox (works well for IE 11 as a flexbox fallback):
+
+```CSS
+#display.flex(grid);
+```
+
 To minimize common repeatition, this mixin takes color as the first param and background-color as the second param.
 By default color is set to black and background color set to white. Pass in the colours of your choice.
 

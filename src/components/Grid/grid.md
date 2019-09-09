@@ -85,3 +85,10 @@ We can specify the start column and amount to span the element by. Lets start at
   #grid.column(responsive);
   #grid.column(responsive, 6, 4);
 ```
+
+Useful mixin to change both Grid column and row gaps at the same time.
+Both column and row gaps must have the same value.
+
+```CSS
+  #grid.gap(20px);
+```

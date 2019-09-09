@@ -23,3 +23,10 @@ If you need paralell top & bottom or left & right borders pass in vertical or ho
 ```CSS
 #border.solid(vertical, 4px, #ccc);
 ```
+
+Useful border-radius mixins when we need a top left and right radius or bottom left and right radius.
+
+```CSS
+#border.radius(top, 8px);
+#border.radius(bottom, 4px);
+```
