@@ -29,7 +29,7 @@ class MenuItem extends Component {
     const activeClassName = `${linkClassName}---active`;
     const { links } = this.state;
 
-    const renderLinks = links.map(link => {
+    const renderLinks = links.map((link) => {
       const lowerCaseLink = link.toLowerCase();
       const renderRouteName =
         lowerCaseLink === 'dashboard' ? '' : lowerCaseLink;

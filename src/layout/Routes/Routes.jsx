@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -7,7 +7,6 @@ import {
 import Header from 'layout/Header/Header';
 import Footer from 'layout/Footer/Footer';
 import Menu from 'layout/Menu/Menu';
-import Sidebar from 'layout/Sidebar/Sidebar';
 import Dashboard from 'components/Dashboard/Dashboard';
 import Colors from 'components/Colors/Colors';
 import Buttons from 'components/Buttons/Buttons';
@@ -27,7 +26,7 @@ import Shapes from 'components/Shapes/Shapes';
 
 const Routes = () => (
   <Router history={browserHistory}>
-    <Fragment>
+    <>
       <Header appName="Less Style Library Documentation" />
       <Menu />
       <main>
@@ -48,13 +47,10 @@ const Routes = () => (
         <Route path="/gradients" component={Gradients} />
         <Route path="/shapes" component={Shapes} />
       </main>
-      <aside className="sidebar">
-        <Sidebar />
-      </aside>
       <footer>
         <Footer />
       </footer>
-    </Fragment>
+    </>
   </Router>
 );
 

@@ -40,7 +40,7 @@ class Color extends Component {
     const { colors } = this.state;
     const baseClassName = 'content-colors';
 
-    const renderColor = colors.map(color => {
+    const renderColor = colors.map((color) => {
       const blockClassName = `${baseClassName}--block`;
       const colorClassName = `${blockClassName}---${color}`;
 

@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser';
 import Color from './Color';
 import colorsContent from './colors.md';
@@ -11,14 +11,14 @@ class Colors extends Component {
   render() {
     const { markdown } = this.state;
     return (
-      <Fragment>
+      <>
         <div className="content content-colors--header">
           {ReactHtmlParser(markdown)}
         </div>
         <div className="content content-colors">
           <Color />
         </div>
-      </Fragment>
+      </>
     );
   }
 }
