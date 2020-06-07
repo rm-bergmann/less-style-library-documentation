@@ -4,7 +4,7 @@ const common = require('./webpack.common.js');
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCss = require('optimize-css-assets-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -34,7 +34,7 @@ const config = merge(common, {
     new HtmlWebpackPlugin({
       template: './public/index-build.html',
     }),
-    
+
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
@@ -42,7 +42,7 @@ const config = merge(common, {
     new UglifyJSPlugin({
       sourceMap: true
     }),
-    
+
     new OptimizeCss({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
@@ -53,20 +53,22 @@ const config = merge(common, {
       },
       canPrint: true,
     }),
-    
-    new CleanWebpackPlugin('./build'),
+
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['./build']
+    }),
 
     new InlineEnvironmentVariablesPlugin(),
 
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
-    
+
     /*
     new ManifestPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    */   
+    */
   ],
 
   module: {
