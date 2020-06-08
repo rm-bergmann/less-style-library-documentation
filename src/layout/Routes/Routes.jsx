@@ -9,7 +9,7 @@ import Footer from 'layout/Footer/Footer';
 import Menu from 'layout/Menu/Menu';
 import Dashboard from 'components/Dashboard/Dashboard';
 import Colors from 'components/Colors/Colors';
-import Buttons from 'components/Buttons/Buttons';
+import Button from 'components/Button/Button';
 import Titles from 'components/Titles/Titles';
 import Media from 'components/Media/Media';
 import Inputs from 'components/Inputs/Inputs';
@@ -33,7 +33,7 @@ const Routes = () => (
         <Route exact path="/" component={Dashboard} />
         <Route path="/colors" component={Colors} />
         <Route path="/titles" component={Titles} />
-        <Route path="/buttons" component={Buttons} />
+        <Route path="/button" component={Button} />
         <Route path="/media-queries" component={Media} />
         <Route path="/inputs" component={Inputs} />
         <Route path="/textareas" component={Textareas} />

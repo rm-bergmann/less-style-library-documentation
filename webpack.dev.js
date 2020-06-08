@@ -8,7 +8,7 @@ const historyApiFallback = require('connect-history-api-fallback');
 const hostname = 'localhost';
 
 const config = merge(common, {
-  
+
   devtool: 'inline-source-map',
   mode: 'development',
 
@@ -25,13 +25,13 @@ const config = merge(common, {
     hot: true,
     overlay: true,
     https: false,
-    port: 3000,
+    port: 3200,
   },
-  
-  plugins: [   
+
+  plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
-  
+
   module: {
     rules: [
       {

@@ -6,7 +6,7 @@ class MenuItem extends Component {
     links: [
       'Dashboard',
       'Border',
-      'Buttons',
+      'Button',
       'Colors',
       'Display',
       'Font',

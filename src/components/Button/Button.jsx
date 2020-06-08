@@ -12,7 +12,7 @@ import {
 
 // Crazy code! Need to componentize or something, trying to find an automatable pattern
 // but there are some differences in the patterns
-const Buttons = () => {
+const Button = () => {
   const syntaxHighlight = atomDark;
 
   return (
@@ -92,4 +92,4 @@ const Buttons = () => {
   );
 };
 
-export default Buttons;
+export default Button;
