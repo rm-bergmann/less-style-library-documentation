@@ -1,0 +1,38 @@
+.border-example {
+  &-div {
+    #display.dimensions(200px, 40px);
+
+    &--01 {
+      #border.solid();
+    }
+
+    &--02 {
+      #border.dotted(4px, #f00);
+    }
+
+    &--03 {
+      #border.dashed(top, 2px, green);
+      background-color: lighten(@gray-light, 30%);
+    }
+
+    &--04 {
+      #border.solid(vertical, 4px, #333);
+      background-color: lighten(@gray-light, 30%);
+    }
+
+    &--06 {
+      #border.solid(horizontal, 2px, black);
+      background-color: lighten(@gray-light, 30%);
+    }
+
+    &--07 {
+      #border.radius(top, 8px);
+      background-color: @gray;
+    }
+
+    &--08 {
+      #border.radius(bottom, 8px);
+      background-color: @gray-dark;
+    }
+  }
+}

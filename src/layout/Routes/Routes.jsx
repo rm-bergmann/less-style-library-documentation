@@ -17,7 +17,7 @@ import Textareas from 'components/Textareas/Textareas';
 import Selects from 'components/Selects/Selects';
 import Grid from 'components/Grid/Grid';
 import Position from 'components/Position/Position';
-import Borders from 'components/Borders/Borders';
+import Border from 'components/Border/Border';
 import Display from 'components/Display/Display';
 import Hide from 'components/Hide/Hide';
 import Font from 'components/Font/Font';
@@ -40,7 +40,7 @@ const Routes = () => (
         <Route path="/selects" component={Selects} />
         <Route path="/grid" component={Grid} />
         <Route path="/position" component={Position} />
-        <Route path="/borders" component={Borders} />
+        <Route path="/border" component={Border} />
         <Route path="/display" component={Display} />
         <Route path="/hide" component={Hide} />
         <Route path="/font" component={Font} />

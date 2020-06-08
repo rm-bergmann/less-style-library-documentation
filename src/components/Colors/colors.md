@@ -3,7 +3,7 @@
 CSS has a huge [list of color variable names][1] already built in,
 but they are not easy to memorize unless you use them frequently.
 
-Ive included some random LESS color variables to make it easy to experiment
+Ive included some random Less color variables to make it easy to experiment
 with random colors if you don't have a set color pallette yet.
 
 Ideally you will have your own color pallette with HEX or RGB color variables
@@ -15,8 +15,8 @@ Color pallettes can have a range of colors so I have gone with an incremental na
 You can override these and add as many as you need.
 
 ```css
-@color-01: @blue        // primary color
-@color-02: @blue-light  // secondary color
+@color-01: @blue;       // primary color
+@color-02: @blue-light; // secondary color
 @color-03: @gray-light;
 ```
 

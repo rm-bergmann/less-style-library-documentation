@@ -5,7 +5,7 @@ class MenuItem extends Component {
   state = {
     links: [
       'Dashboard',
-      'Borders',
+      'Border',
       'Buttons',
       'Colors',
       'Display',
