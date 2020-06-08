@@ -8,6 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const lessPluginGlob = require('less-plugin-glob');
 const InlineEnvironmentVariablesPlugin = require('inline-environment-variables-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'build');
@@ -88,6 +89,20 @@ const config = merge(common, {
             },
           },
           'less-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              sourceMap: true,
+              lessOptions: {
+                plugins: [lessPluginGlob],
+                paths: [
+                  path.resolve(__dirname, 'components'),
+                  path.resolve(__dirname, 'less'),
+                  path.resolve(__dirname, 'node_modules'),
+                ]
+              },
+            },
+          },
         ],
       },
     ],

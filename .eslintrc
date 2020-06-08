@@ -12,7 +12,7 @@
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/valid-expect": "error",
-    "react/state-in-constructor": "never",
+    "react/state-in-constructor": 0,
     "jsx-a11y/anchor-is-valid": [
       "error",
       {

@@ -1,5 +1,5 @@
 {
-  "name": "app-starter-kit",
+  "name": "less-style-library-documentation",
   "version": "1.1.7",
   "description": "Front End JS App with essential dev dependencies and LESS mixin library",
   "main": "webpack.common.js",
