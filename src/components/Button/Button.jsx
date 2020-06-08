@@ -16,8 +16,8 @@ const Button = () => {
   const syntaxHighlight = atomDark;
 
   return (
-    <div className="content content-buttons">
-      <h1>Buttons</h1>
+    <div className="content content-button">
+      <h1>Button Mixins</h1>
       <p>
         By default the background colour is set to the @color-01 variable which
         I set to @teal in this app. Target the element you want to style and
@@ -27,36 +27,36 @@ const Button = () => {
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
         {buttonExample01}
       </SyntaxHighlighter>
-      <button type="button" className="content-buttons--button-01">
+      <button type="button" className="content-button--button-01">
         Button 01
       </button>
       <button
         type="button"
-        className="content-buttons--button-01 content-buttons--button-01---green"
+        className="content-buttons--button-01 content-button--button-01---green"
       >
         Button 01
       </button>
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
         {buttonExample02}
       </SyntaxHighlighter>
-      <button type="button" className="content-buttons--button-02">
+      <button type="button" className="content-button--button-02">
         Button 02
       </button>
       <button
         type="button"
-        className="content-buttons--button-02 content-buttons--button-02---red"
+        className="content-buttons--button-02 content-button--button-02---red"
       >
         Button 02
       </button>
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
         {buttonExample03}
       </SyntaxHighlighter>
-      <button type="button" className="content-buttons--button-03">
+      <button type="button" className="content-button--button-03">
         Button 03
       </button>
       <button
         type="button"
-        className="content-buttons--button-03 content-buttons--button-03---purple"
+        className="content-buttons--button-03 content-button--button-03---purple"
       >
         Button 03
       </button>
@@ -67,23 +67,23 @@ const Button = () => {
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
         {buttonExample05}
       </SyntaxHighlighter>
-      <button type="button" className="content-buttons--button-04">
+      <button type="button" className="content-button--button-04">
         Button 04
       </button>
       <button
         type="button"
-        className="content-buttons--button-04 content-buttons--button-04---gray"
+        className="content-buttons--button-04 content-button--button-04---gray"
       >
         Button 04
       </button>
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
         {buttonExample06}
       </SyntaxHighlighter>
-      <a className="content-buttons--button-link" href="/">
+      <a className="content-button--button-link" href="/">
         I am a link
       </a>
       <a
-        className="content-buttons--button-link content-buttons--button-link---orange"
+        className="content-buttons--button-link content-button--button-link---orange"
         href="/"
       >
         I am also a link

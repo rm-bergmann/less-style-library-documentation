@@ -8,7 +8,7 @@ const Borders = () => {
 
   return (
     <div className="content content-borders">
-      <h1>Border:</h1>
+      <h1>Border Mixins</h1>
       <p>
         <em>
           Border mixins are designed for you to easily add borders to your
