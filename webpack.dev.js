@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
+const lessPluginGlob = require('less-plugin-glob');
 const common = require('./webpack.common.js');
 const PUBLIC_DIR = path.resolve(__dirname, 'public');
 const historyApiFallback = require('connect-history-api-fallback');
@@ -45,15 +46,18 @@ const config = merge(common, {
           },
           {
             loader: 'less-loader',
-          },
-          /*
-          { 
-            loader: 'text-transform-loader',
             options: {
-              prependText: '@import "variables.less"',
-            }
+              sourceMap: true,
+              lessOptions: {
+                plugins: [lessPluginGlob],
+                paths: [
+                  path.resolve(__dirname, 'components'),
+                  path.resolve(__dirname, 'less'),
+                  path.resolve(__dirname, 'node_modules'),
+                ]
+              },
+            },
           },
-          */
         ],
       },
     ],

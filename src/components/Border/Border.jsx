@@ -32,8 +32,8 @@ const Borders = () => {
       </SyntaxHighlighter>
 
       <p>
-        If you want a 2px green top border only you Pass in top (or bottom,
-        left, right), border-width value and color
+        If you want a 2px green top border only you pass in top (or bottom /
+        left / right), border-width value and color
       </p>
       <div className="border-example-div border-example-div--03" />
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
