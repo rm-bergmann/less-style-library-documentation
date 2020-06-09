@@ -1,9 +1,10 @@
 import React from 'react';
 
+const currentDate = new Date();
+
 const Footer = () => {
   return (
     <div className="footer-content">
-      <h5>Site built in Webpack, React JS & Less</h5>
       <p>
         <a
           href="https://github.com/rm-bergmann/less-style-library"
@@ -12,8 +13,7 @@ const Footer = () => {
         >
           Github Project
         </a>
-      </p>
-      <p>
+        {' | '}
         <a
           href="https://www.npmjs.com/package/less-style-library"
           target="_blank"
@@ -22,6 +22,11 @@ const Footer = () => {
           NPM Package
         </a>
       </p>
+      <p>Site built in Webpack, React JS & Less</p>
+      <small>
+        &copy;
+        {` Copyright ${currentDate.getFullYear()} rickbergmann.com`}
+      </small>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Hide = () => {
   const syntaxHighlight = atomDark;
   return (
     <div className="content content-grid--header">
-      <h1>Hide Mixins:</h1>
+      <h1>Hide Mixins</h1>
       <p>Use the following mixins for image replacement or hiding text:</p>
       <p>The first mixin is for default image replacement</p>
       <SyntaxHighlighter language="css" style={syntaxHighlight}>
