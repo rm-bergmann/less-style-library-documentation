@@ -21,21 +21,16 @@ const Media = () => {
       </SyntaxHighlighter>
       <div className="flex-container">
         <div className="flex-item">
-          <h2>
-            <strong>Device </strong>
-            Options:
-          </h2>
+          <h2>Device Options:</h2>
           <ul>
             <li>mobile</li>
             <li>tablet</li>
+            <li>laptop</li>
             <li>desktop</li>
           </ul>
         </div>
         <div className="flex-item">
-          <h2>
-            <strong>Size </strong>
-            Options:
-          </h2>
+          <h2>Size Options:</h2>
           <ul>
             <li>small</li>
             <li>large</li>
